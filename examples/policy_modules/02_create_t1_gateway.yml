@@ -15,6 +15,7 @@
         state: "{{ state }}"
         display_name: "{{ item.display_name }}"
         tier0_display_name: "{{ item.tier0_display_name }}"
+        route_advertisement_types: "{{ item.route_advertisement_types }}"
         tags: "{{ item.tags }}"
       with_items:
         - "{{ tier1_gateways }}"
